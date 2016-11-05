@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		493F491D1DCCE0AE006B563C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F491C1DCCE0AE006B563C /* main.m */; };
+		493F49281DCCE0AE006B563C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493F49271DCCE0AE006B563C /* Assets.xcassets */; };
+		493F49331DCCE58B006B563C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49321DCCE58B006B563C /* IJKMediaFramework.framework */; };
+		493F49351DCCE5B0006B563C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49341DCCE5B0006B563C /* AudioToolbox.framework */; };
+		493F49371DCCE5B8006B563C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49361DCCE5B8006B563C /* AVFoundation.framework */; };
+		493F49391DCCE5C3006B563C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49381DCCE5C3006B563C /* CoreGraphics.framework */; };
+		493F493B1DCCE5CB006B563C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F493A1DCCE5CB006B563C /* CoreMedia.framework */; };
+		493F493D1DCCE5D3006B563C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F493C1DCCE5D3006B563C /* CoreVideo.framework */; };
+		493F493F1DCCE5DB006B563C /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F493E1DCCE5DB006B563C /* libbz2.tbd */; };
+		493F49411DCCE5E5006B563C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49401DCCE5E5006B563C /* libz.tbd */; };
+		493F49431DCCE5EE006B563C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49421DCCE5EE006B563C /* MediaPlayer.framework */; };
+		493F49451DCCE5FE006B563C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49441DCCE5FE006B563C /* MobileCoreServices.framework */; };
+		493F49471DCCE607006B563C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49461DCCE607006B563C /* OpenGLES.framework */; };
+		493F49491DCCE610006B563C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F49481DCCE610006B563C /* QuartzCore.framework */; };
+		493F494B1DCCE618006B563C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F494A1DCCE618006B563C /* UIKit.framework */; };
+		493F494D1DCCE621006B563C /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493F494C1DCCE621006B563C /* VideoToolbox.framework */; };
+		493F495F1DCCE739006B563C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F49591DCCE739006B563C /* AppDelegate.m */; };
+		493F49651DCCE8D5006B563C /* IKMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F49641DCCE8D5006B563C /* IKMainNavigationController.m */; };
+		493F49681DCCE8FA006B563C /* IKMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F49671DCCE8FA006B563C /* IKMainTabBarController.m */; };
+		493F496B1DCCEA01006B563C /* IKLiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F496A1DCCEA01006B563C /* IKLiveController.m */; };
+		493F496E1DCCEA11006B563C /* IKCarmeraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F496D1DCCEA11006B563C /* IKCarmeraController.m */; };
+		493F49711DCCEA1B006B563C /* IKMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F49701DCCEA1B006B563C /* IKMineController.m */; };
+		493F49751DCCEF54006B563C /* NetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F49741DCCEF54006B563C /* NetworkTool.m */; };
+		493F497A1DCCF5CB006B563C /* IKLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F49791DCCF5CB006B563C /* IKLiveModel.m */; };
+		4957C50D1DCDC99500244FC1 /* IKLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4957C50C1DCDC99500244FC1 /* IKLiveCell.m */; };
+		4957C51E1DCDF86400244FC1 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4957C5141DCDF86400244FC1 /* NSArray+Log.m */; };
+		4957C51F1DCDF86400244FC1 /* UIBarButtonItem+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4957C5171DCDF86400244FC1 /* UIBarButtonItem+Addition.m */; };
+		4957C5201DCDF86400244FC1 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4957C5191DCDF86400244FC1 /* UIColor+Addition.m */; };
+		4957C5211DCDF86400244FC1 /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4957C51B1DCDF86400244FC1 /* UILabel+Addition.m */; };
+		4957C5221DCDF86400244FC1 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4957C51D1DCDF86400244FC1 /* UIView+Extension.m */; };
+		4957C5291DCE0C1400244FC1 /* IKWatchLiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4957C5281DCE0C1400244FC1 /* IKWatchLiveController.m */; };
+		49D3B83F1DCE352800150489 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D3B83E1DCE352800150489 /* GPUImageBeautifyFilter.m */; };
+		49D3B8421DCE3ACD00150489 /* IKShowLiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D3B8411DCE3ACD00150489 /* IKShowLiveController.m */; };
+		87ECF1930D2ED54C98CFBC9F /* libPods-IKLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B720E68D85BC214DA0C7FDB6 /* libPods-IKLive.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		493F49181DCCE0AE006B563C /* IKLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IKLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		493F491C1DCCE0AE006B563C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		493F49271DCCE0AE006B563C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		493F492C1DCCE0AE006B563C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493F49321DCCE58B006B563C /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		493F49341DCCE5B0006B563C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		493F49361DCCE5B8006B563C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		493F49381DCCE5C3006B563C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		493F493A1DCCE5CB006B563C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		493F493C1DCCE5D3006B563C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		493F493E1DCCE5DB006B563C /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		493F49401DCCE5E5006B563C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		493F49421DCCE5EE006B563C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		493F49441DCCE5FE006B563C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		493F49461DCCE607006B563C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		493F49481DCCE610006B563C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		493F494A1DCCE618006B563C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		493F494C1DCCE621006B563C /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		493F49581DCCE739006B563C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		493F49591DCCE739006B563C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		493F49631DCCE8D5006B563C /* IKMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKMainNavigationController.h; sourceTree = "<group>"; };
+		493F49641DCCE8D5006B563C /* IKMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKMainNavigationController.m; sourceTree = "<group>"; };
+		493F49661DCCE8FA006B563C /* IKMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKMainTabBarController.h; sourceTree = "<group>"; };
+		493F49671DCCE8FA006B563C /* IKMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKMainTabBarController.m; sourceTree = "<group>"; };
+		493F49691DCCEA01006B563C /* IKLiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKLiveController.h; sourceTree = "<group>"; };
+		493F496A1DCCEA01006B563C /* IKLiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKLiveController.m; sourceTree = "<group>"; };
+		493F496C1DCCEA11006B563C /* IKCarmeraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKCarmeraController.h; sourceTree = "<group>"; };
+		493F496D1DCCEA11006B563C /* IKCarmeraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKCarmeraController.m; sourceTree = "<group>"; };
+		493F496F1DCCEA1B006B563C /* IKMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKMineController.h; sourceTree = "<group>"; };
+		493F49701DCCEA1B006B563C /* IKMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKMineController.m; sourceTree = "<group>"; };
+		493F49731DCCEF54006B563C /* NetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTool.h; sourceTree = "<group>"; };
+		493F49741DCCEF54006B563C /* NetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTool.m; sourceTree = "<group>"; };
+		493F49761DCCEF6E006B563C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		493F49781DCCF5CB006B563C /* IKLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKLiveModel.h; sourceTree = "<group>"; };
+		493F49791DCCF5CB006B563C /* IKLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKLiveModel.m; sourceTree = "<group>"; };
+		4957C50B1DCDC99500244FC1 /* IKLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKLiveCell.h; sourceTree = "<group>"; };
+		4957C50C1DCDC99500244FC1 /* IKLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKLiveCell.m; sourceTree = "<group>"; };
+		4957C5131DCDF86400244FC1 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		4957C5141DCDF86400244FC1 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		4957C5151DCDF86400244FC1 /* OCNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNAdditions.h; sourceTree = "<group>"; };
+		4957C5161DCDF86400244FC1 /* UIBarButtonItem+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Addition.h"; sourceTree = "<group>"; };
+		4957C5171DCDF86400244FC1 /* UIBarButtonItem+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Addition.m"; sourceTree = "<group>"; };
+		4957C5181DCDF86400244FC1 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		4957C5191DCDF86400244FC1 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
+		4957C51A1DCDF86400244FC1 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
+		4957C51B1DCDF86400244FC1 /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
+		4957C51C1DCDF86400244FC1 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		4957C51D1DCDF86400244FC1 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		4957C5271DCE0C1400244FC1 /* IKWatchLiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKWatchLiveController.h; sourceTree = "<group>"; };
+		4957C5281DCE0C1400244FC1 /* IKWatchLiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKWatchLiveController.m; sourceTree = "<group>"; };
+		49D3B83D1DCE352800150489 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		49D3B83E1DCE352800150489 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		49D3B8401DCE3ACD00150489 /* IKShowLiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKShowLiveController.h; sourceTree = "<group>"; };
+		49D3B8411DCE3ACD00150489 /* IKShowLiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKShowLiveController.m; sourceTree = "<group>"; };
+		9A71A81273F45F6138453335 /* Pods-IKLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IKLive/Pods-IKLive.debug.xcconfig"; sourceTree = "<group>"; };
+		B720E68D85BC214DA0C7FDB6 /* libPods-IKLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IKLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA04B56FEAEAB4756DC9F517 /* Pods-IKLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IKLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-IKLive/Pods-IKLive.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		493F49151DCCE0AE006B563C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493F494D1DCCE621006B563C /* VideoToolbox.framework in Frameworks */,
+				493F494B1DCCE618006B563C /* UIKit.framework in Frameworks */,
+				493F49491DCCE610006B563C /* QuartzCore.framework in Frameworks */,
+				493F49471DCCE607006B563C /* OpenGLES.framework in Frameworks */,
+				493F49451DCCE5FE006B563C /* MobileCoreServices.framework in Frameworks */,
+				493F49431DCCE5EE006B563C /* MediaPlayer.framework in Frameworks */,
+				493F49411DCCE5E5006B563C /* libz.tbd in Frameworks */,
+				493F493F1DCCE5DB006B563C /* libbz2.tbd in Frameworks */,
+				493F493D1DCCE5D3006B563C /* CoreVideo.framework in Frameworks */,
+				493F493B1DCCE5CB006B563C /* CoreMedia.framework in Frameworks */,
+				493F49391DCCE5C3006B563C /* CoreGraphics.framework in Frameworks */,
+				493F49371DCCE5B8006B563C /* AVFoundation.framework in Frameworks */,
+				493F49351DCCE5B0006B563C /* AudioToolbox.framework in Frameworks */,
+				87ECF1930D2ED54C98CFBC9F /* libPods-IKLive.a in Frameworks */,
+				493F49331DCCE58B006B563C /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A48E88F494FD5C57DC3132B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A71A81273F45F6138453335 /* Pods-IKLive.debug.xcconfig */,
+				DA04B56FEAEAB4756DC9F517 /* Pods-IKLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		493F490F1DCCE0AE006B563C = {
+			isa = PBXGroup;
+			children = (
+				493F491A1DCCE0AE006B563C /* IKLive */,
+				493F49191DCCE0AE006B563C /* Products */,
+				1A48E88F494FD5C57DC3132B /* Pods */,
+				BF7C2B788AF4C96BEAEC134E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		493F49191DCCE0AE006B563C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				493F49181DCCE0AE006B563C /* IKLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		493F491A1DCCE0AE006B563C /* IKLive */ = {
+			isa = PBXGroup;
+			children = (
+				493F495E1DCCE739006B563C /* Tools */,
+				493F494E1DCCE739006B563C /* Classes */,
+				493F491B1DCCE0AE006B563C /* Supporting Files */,
+			);
+			path = IKLive;
+			sourceTree = "<group>";
+		};
+		493F491B1DCCE0AE006B563C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				493F49761DCCEF6E006B563C /* PrefixHeader.pch */,
+				493F49271DCCE0AE006B563C /* Assets.xcassets */,
+				493F492C1DCCE0AE006B563C /* Info.plist */,
+				493F491C1DCCE0AE006B563C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		493F494E1DCCE739006B563C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				493F49551DCCE739006B563C /* Main */,
+				493F49521DCCE739006B563C /* Live */,
+				493F494F1DCCE739006B563C /* Camera */,
+				493F495B1DCCE739006B563C /* Mine */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		493F494F1DCCE739006B563C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				493F49501DCCE739006B563C /* Controllers */,
+				493F49511DCCE739006B563C /* Views */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		493F49501DCCE739006B563C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				493F496C1DCCEA11006B563C /* IKCarmeraController.h */,
+				493F496D1DCCEA11006B563C /* IKCarmeraController.m */,
+				49D3B8401DCE3ACD00150489 /* IKShowLiveController.h */,
+				49D3B8411DCE3ACD00150489 /* IKShowLiveController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		493F49511DCCE739006B563C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		493F49521DCCE739006B563C /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				493F49531DCCE739006B563C /* Controllers */,
+				493F49541DCCE739006B563C /* Views */,
+				493F49771DCCF24F006B563C /* Models */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		493F49531DCCE739006B563C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				493F49691DCCEA01006B563C /* IKLiveController.h */,
+				493F496A1DCCEA01006B563C /* IKLiveController.m */,
+				4957C5271DCE0C1400244FC1 /* IKWatchLiveController.h */,
+				4957C5281DCE0C1400244FC1 /* IKWatchLiveController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		493F49541DCCE739006B563C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4957C50B1DCDC99500244FC1 /* IKLiveCell.h */,
+				4957C50C1DCDC99500244FC1 /* IKLiveCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		493F49551DCCE739006B563C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				493F49561DCCE739006B563C /* Controllers */,
+				493F49571DCCE739006B563C /* Others */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		493F49561DCCE739006B563C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				493F49661DCCE8FA006B563C /* IKMainTabBarController.h */,
+				493F49671DCCE8FA006B563C /* IKMainTabBarController.m */,
+				493F49631DCCE8D5006B563C /* IKMainNavigationController.h */,
+				493F49641DCCE8D5006B563C /* IKMainNavigationController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		493F49571DCCE739006B563C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				493F49581DCCE739006B563C /* AppDelegate.h */,
+				493F49591DCCE739006B563C /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		493F495B1DCCE739006B563C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				493F495C1DCCE739006B563C /* Controllers */,
+				493F495D1DCCE739006B563C /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		493F495C1DCCE739006B563C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				493F496F1DCCEA1B006B563C /* IKMineController.h */,
+				493F49701DCCEA1B006B563C /* IKMineController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		493F495D1DCCE739006B563C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		493F495E1DCCE739006B563C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4957C5121DCDF86400244FC1 /* Additions */,
+				493F49721DCCEF54006B563C /* NetworkTool */,
+				49D3B83C1DCE352800150489 /* GPUImageBeautifyFilter */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		493F49721DCCEF54006B563C /* NetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				493F49731DCCEF54006B563C /* NetworkTool.h */,
+				493F49741DCCEF54006B563C /* NetworkTool.m */,
+			);
+			path = NetworkTool;
+			sourceTree = "<group>";
+		};
+		493F49771DCCF24F006B563C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				493F49781DCCF5CB006B563C /* IKLiveModel.h */,
+				493F49791DCCF5CB006B563C /* IKLiveModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4957C5121DCDF86400244FC1 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				4957C5131DCDF86400244FC1 /* NSArray+Log.h */,
+				4957C5141DCDF86400244FC1 /* NSArray+Log.m */,
+				4957C5151DCDF86400244FC1 /* OCNAdditions.h */,
+				4957C5161DCDF86400244FC1 /* UIBarButtonItem+Addition.h */,
+				4957C5171DCDF86400244FC1 /* UIBarButtonItem+Addition.m */,
+				4957C5181DCDF86400244FC1 /* UIColor+Addition.h */,
+				4957C5191DCDF86400244FC1 /* UIColor+Addition.m */,
+				4957C51A1DCDF86400244FC1 /* UILabel+Addition.h */,
+				4957C51B1DCDF86400244FC1 /* UILabel+Addition.m */,
+				4957C51C1DCDF86400244FC1 /* UIView+Extension.h */,
+				4957C51D1DCDF86400244FC1 /* UIView+Extension.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		49D3B83C1DCE352800150489 /* GPUImageBeautifyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				49D3B83D1DCE352800150489 /* GPUImageBeautifyFilter.h */,
+				49D3B83E1DCE352800150489 /* GPUImageBeautifyFilter.m */,
+			);
+			path = GPUImageBeautifyFilter;
+			sourceTree = "<group>";
+		};
+		BF7C2B788AF4C96BEAEC134E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493F49401DCCE5E5006B563C /* libz.tbd */,
+				493F493E1DCCE5DB006B563C /* libbz2.tbd */,
+				493F494A1DCCE618006B563C /* UIKit.framework */,
+				493F493C1DCCE5D3006B563C /* CoreVideo.framework */,
+				493F49461DCCE607006B563C /* OpenGLES.framework */,
+				493F493A1DCCE5CB006B563C /* CoreMedia.framework */,
+				493F49481DCCE610006B563C /* QuartzCore.framework */,
+				493F49421DCCE5EE006B563C /* MediaPlayer.framework */,
+				493F494C1DCCE621006B563C /* VideoToolbox.framework */,
+				493F49341DCCE5B0006B563C /* AudioToolbox.framework */,
+				493F49381DCCE5C3006B563C /* CoreGraphics.framework */,
+				493F49361DCCE5B8006B563C /* AVFoundation.framework */,
+				493F49441DCCE5FE006B563C /* MobileCoreServices.framework */,
+				493F49321DCCE58B006B563C /* IJKMediaFramework.framework */,
+				B720E68D85BC214DA0C7FDB6 /* libPods-IKLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		493F49171DCCE0AE006B563C /* IKLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493F492F1DCCE0AE006B563C /* Build configuration list for PBXNativeTarget "IKLive" */;
+			buildPhases = (
+				0FE1D66847F85BB007523095 /* [CP] Check Pods Manifest.lock */,
+				493F49141DCCE0AE006B563C /* Sources */,
+				493F49151DCCE0AE006B563C /* Frameworks */,
+				493F49161DCCE0AE006B563C /* Resources */,
+				DBE7989877193D96E1C4553A /* [CP] Embed Pods Frameworks */,
+				01C927EFE11F62B3EBC89C89 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IKLive;
+			productName = IKLive;
+			productReference = 493F49181DCCE0AE006B563C /* IKLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		493F49101DCCE0AE006B563C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IK;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Apress;
+				TargetAttributes = {
+					493F49171DCCE0AE006B563C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = GL3FCT58F9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 493F49131DCCE0AE006B563C /* Build configuration list for PBXProject "IKLive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 493F490F1DCCE0AE006B563C;
+			productRefGroup = 493F49191DCCE0AE006B563C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				493F49171DCCE0AE006B563C /* IKLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		493F49161DCCE0AE006B563C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493F49281DCCE0AE006B563C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01C927EFE11F62B3EBC89C89 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IKLive/Pods-IKLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FE1D66847F85BB007523095 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE7989877193D96E1C4553A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IKLive/Pods-IKLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		493F49141DCCE0AE006B563C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4957C5221DCDF86400244FC1 /* UIView+Extension.m in Sources */,
+				4957C5291DCE0C1400244FC1 /* IKWatchLiveController.m in Sources */,
+				493F49751DCCEF54006B563C /* NetworkTool.m in Sources */,
+				4957C50D1DCDC99500244FC1 /* IKLiveCell.m in Sources */,
+				493F49681DCCE8FA006B563C /* IKMainTabBarController.m in Sources */,
+				493F496B1DCCEA01006B563C /* IKLiveController.m in Sources */,
+				493F49651DCCE8D5006B563C /* IKMainNavigationController.m in Sources */,
+				493F497A1DCCF5CB006B563C /* IKLiveModel.m in Sources */,
+				49D3B83F1DCE352800150489 /* GPUImageBeautifyFilter.m in Sources */,
+				4957C51E1DCDF86400244FC1 /* NSArray+Log.m in Sources */,
+				493F496E1DCCEA11006B563C /* IKCarmeraController.m in Sources */,
+				493F495F1DCCE739006B563C /* AppDelegate.m in Sources */,
+				493F49711DCCEA1B006B563C /* IKMineController.m in Sources */,
+				4957C5211DCDF86400244FC1 /* UILabel+Addition.m in Sources */,
+				49D3B8421DCE3ACD00150489 /* IKShowLiveController.m in Sources */,
+				4957C51F1DCDF86400244FC1 /* UIBarButtonItem+Addition.m in Sources */,
+				4957C5201DCDF86400244FC1 /* UIColor+Addition.m in Sources */,
+				493F491D1DCCE0AE006B563C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		493F492D1DCCE0AE006B563C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		493F492E1DCCE0AE006B563C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		493F49301DCCE0AE006B563C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A71A81273F45F6138453335 /* Pods-IKLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = GL3FCT58F9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IKLive/PrefixHeader.pch;
+				INFOPLIST_FILE = IKLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apress.IKLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		493F49311DCCE0AE006B563C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA04B56FEAEAB4756DC9F517 /* Pods-IKLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = GL3FCT58F9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IKLive/PrefixHeader.pch;
+				INFOPLIST_FILE = IKLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apress.IKLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		493F49131DCCE0AE006B563C /* Build configuration list for PBXProject "IKLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493F492D1DCCE0AE006B563C /* Debug */,
+				493F492E1DCCE0AE006B563C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493F492F1DCCE0AE006B563C /* Build configuration list for PBXNativeTarget "IKLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493F49301DCCE0AE006B563C /* Debug */,
+				493F49311DCCE0AE006B563C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 493F49101DCCE0AE006B563C /* Project object */;
+}
